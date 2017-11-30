@@ -1,3 +1,1 @@
-= Span
-
-This project rocks and uses MIT-LICENSE.
+All Legacy Code Here.
