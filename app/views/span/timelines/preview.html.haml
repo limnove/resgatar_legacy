@@ -1,0 +1,7 @@
+-# app/views/span/biographies/preview.html.haml
+
+= render partial: "header"
+.preview
+  .previewBox
+    .previewItem
+      #{ markdown(@timeline.body) }

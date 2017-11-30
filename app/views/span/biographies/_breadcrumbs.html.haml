@@ -1,0 +1,11 @@
+-# app/views/span/biographies/_breadcrumbs.html.haml
+
+.breadcrumbs
+  .breadcrumbsBox
+    .breadcrumbsList
+      - if params[:action] == "preview"
+        = link_to "Go Back", span.biography_path
+      - elsif params[:action] == "seo_settings"
+        = link_to "Go Back", span.biography_path
+      - else
+        = link_to "Dashboard", span.root_path

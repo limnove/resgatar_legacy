@@ -1,0 +1,51 @@
+// app/assets/stylesheets/span/blocks/_session_menu.scss
+
+.sessionMenu {
+  padding: 8px 0;
+  @include floatRight;
+  .sessionMenuBox {
+    width: 100%;
+    @include floatLeft;
+    .sessionMenuList {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 48px;
+        @include floatLeft;
+        @include hoverAnimation;
+        img {
+          height: 48px;
+          @include floatLeft;
+        }
+        &:link, &:visited {
+          color: $purple02;
+        }
+        &:hover, &:active {
+          color: $purple00;
+        }
+      }
+      a.logout {
+        margin: 8px 0 8px;
+        padding: 3px 12px 0;
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 29px;
+        border-radius: 2px;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link, &:visited {
+          color: $purple02;
+          background-color: $purple00;
+        }
+        &:hover, &:active {
+          color: $purple00;
+          background-color: $purple02;
+        }
+      }
+    }
+  }
+}

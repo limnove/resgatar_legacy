@@ -1,0 +1,14 @@
+-# app/views/span/networks/_network.html.haml
+
+%li.cardList{ id: "network_#{ object.id }" }
+  .top.cbpH
+    %nav.misc
+      %ul.miscBox
+        = object.get_destroy_btn
+        = object.get_handle_btn
+        = object.get_edit_btn
+  .middle.ctp.cbp
+    = object.get_title
+  .bottom.ctpH
+    = object.get_published_status
+    = object.get_path

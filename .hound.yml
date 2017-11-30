@@ -1,0 +1,24 @@
+# .hound.yml
+
+# Hound comments on style violations in GitHub pull requests,
+# allowing you and your team to better review and maintain a clean codebase.
+ruby:
+  enabled: true
+coffeescript:
+  enabled: true
+scss:
+  enabled: true
+haml:
+  enabled: true
+javascript:
+  enabled: false
+eslint:
+  enabled: false
+jscs:
+  enabled: false
+go:
+  enabled: false
+python:
+  enabled: false
+swift:
+  enabled: false

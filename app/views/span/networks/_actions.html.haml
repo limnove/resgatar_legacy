@@ -1,0 +1,7 @@
+-# app/views/span/networks/_actions.html.haml
+
+.actions
+  .actionsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .actionsList
+        = link_to "New Network", new_network_path

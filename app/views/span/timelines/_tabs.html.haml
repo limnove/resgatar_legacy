@@ -1,0 +1,11 @@
+-# app/views/span/timelines/_tabs.html.haml
+
+.tabs
+  .tabsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .tabsList
+        = link_to "SEO Settings", span.edit_timeline_settings_path
+    - if params[:action] == "show" || params[:action] == "edit" || params[:action] == "update"
+      .tabsList
+        = link_to "SEO Settings", span.seo_settings_timeline_path
+    = render partial: "blocks/span/website_status"

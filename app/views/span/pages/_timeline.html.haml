@@ -1,0 +1,11 @@
+-# app/views/span/timelines/_timeline.html.haml
+
+%li.cardList{ id: "timeline_#{ object.id }" }
+  .middle
+    = object.get_title
+    = object.get_description
+  .bottom
+    %nav.misc
+      %ul.miscBox
+        = object.get_published_status
+        = object.get_edit_btn

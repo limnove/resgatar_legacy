@@ -1,0 +1,9 @@
+// app/assets/stylesheets/span/mixins/_hidden.scss
+
+@mixin displayHidden {
+  display: none;
+}
+
+.displayHidden {
+  @include displayHidden;
+}

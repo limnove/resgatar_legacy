@@ -1,0 +1,18 @@
+// app/assets/stylesheets/span/mixins/_clearfix.scss
+
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}

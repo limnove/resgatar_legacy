@@ -1,0 +1,14 @@
+// app/assets/stylesheets/span/mixins/_prefixes.scss
+
+@mixin prefix($property, $value, $prefixes: (webkit moz ms o)) {
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin prefixOnly($property, $value, $prefixes: (webkit moz ms o)) {
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property}: $value;
+  }
+}

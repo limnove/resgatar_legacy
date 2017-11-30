@@ -1,0 +1,7 @@
+-# app/views/span/timelines/_actions.html.haml
+
+.actions
+  .actionsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .actionsList
+        = link_to "New Timeline", new_timeline_path

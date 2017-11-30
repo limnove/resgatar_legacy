@@ -1,0 +1,63 @@
+// app/assets/stylesheets/span/blocks/_core_menu.scss
+
+.coreMenu {
+  padding: 8px 0;
+  @include floatLeft;
+
+  .coreMenuBox {
+    width: 100%;
+    @include floatLeft;
+
+    .coreMenuList {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 48px;
+        text-transform: uppercase;
+        @include floatLeft;
+        @include hoverAnimation;
+        img {
+          height: 48px;
+          @include floatLeft;
+        }
+      }
+    }
+    .coreMenuList {
+      a {
+        &:link,
+        &:visited {
+          color: $purple02;
+        }
+        &:hover,
+        &:active {
+          color: $purple00;
+        }
+      }
+      a.menu {
+        width: 46px;
+        padding: 0 0 0 2px;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 2px;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $purple02;
+          background-color: $purple00;
+        }
+        &:hover,
+        &:active {
+          color: $purple00;
+          background-color: $purple02;
+        }
+      }
+    }
+  }
+}

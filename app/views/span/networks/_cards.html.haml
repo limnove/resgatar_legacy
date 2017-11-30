@@ -1,0 +1,8 @@
+-# app/views/span/networks/_cards.html.haml
+
+.card.medium
+  %ul#ajaxBox.cardBox.sortable{ "data-update-url" => sortable_networks_path }
+    - if @networks.blank?
+      = render partial: "blocks/span/empty"
+    - else
+      = render partial: "network", collection: @networks, as: :object

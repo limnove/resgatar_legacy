@@ -1,0 +1,9 @@
+-# app/views/blocks/span/_session_menu.html.haml
+
+- if current_administrator
+  .sessionMenu
+    .sessionMenuBox
+      .sessionMenuList
+        = link_to "Hi, #{current_administrator.username.titleize}", span.edit_administrator_path
+      .sessionMenuList
+        = link_to "Logout", span.logout_path, class: "logout"

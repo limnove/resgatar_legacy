@@ -1,0 +1,72 @@
+// app/assets/stylesheets/span/blocks/_page_header.scss
+
+.pageHeader {
+  @include floatLeft;
+  .pageHeaderBox {
+    @include floatLeft;
+    .pageHeaderItem {
+      width: 704px;
+      min-height: 32px;
+      margin: 8px;
+      @include floatLeft;
+    }
+    .pageHeaderTitle {
+      @include floatLeft;
+      h1 {
+        color: $gray30;
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 48px;
+        @include floatLeft;
+        span {
+          display: inline-block;
+        }
+      }
+      h1.welcome {
+        color: $blue00;
+        width: 100%;
+        margin: 80px 0 0;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 64px;
+        text-align: center;
+        @include floatLeft;
+        span {
+          display: inline-block;
+        }
+      }
+      a {
+        color: $gray30;
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 48px;
+        text-decoration: none;
+        @include floatLeft;
+        @include hoverAnimation;
+        span {
+          display: inline-block;
+        }
+        &:link::after,
+        &:visited::after {
+          color: $gray02;
+        }
+        &:hover::after,
+        &:active::after {
+          color: $yellow00;
+        }
+      }
+      a::after {
+        margin: 0 0 0 8px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: underline;
+        vertical-align: top;
+        @include hoverAnimation;
+      }
+      a.edit::after {
+        content: "Edit";
+      }
+    }
+  }
+}

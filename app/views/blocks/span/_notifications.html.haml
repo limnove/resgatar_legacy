@@ -1,0 +1,31 @@
+-# app/views/blocks/span/_notifications_menu.html.haml
+
+- if flash[:success]
+  .universal.green00Bg.slideNotifications.fixedTop
+    .placeholder
+      .wrap
+        .column12.floatLeft
+          .notifications
+            .notificationsBox
+              .notificationsItem
+                %p.green20Ft= flash[:success]
+
+- if flash[:warning]
+  .universal.yellow00Bg.slideNotifications.fixedTop
+    .placeholder
+      .wrap
+        .column12.floatLeft
+          .notifications
+            .notificationsBox
+              .notificationsItem
+                %p.yellow20Ft= flash[:warning]
+
+- if flash[:failure]
+  .universal.red00Bg.slideNotifications.fixedTop
+    .placeholder
+      .wrap
+        .column12.floatLeft
+          .notifications
+            .notificationsBox
+              .notificationsItem
+                %p.red20Ft= flash[:failure]

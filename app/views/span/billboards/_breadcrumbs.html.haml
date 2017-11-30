@@ -1,0 +1,10 @@
+-# app/views/span/billboards/_breadcrumbs.html.haml
+
+.breadcrumbs
+  .breadcrumbsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .breadcrumbsList
+        = link_to "Dashboard", span.root_path
+    - else
+      .breadcrumbsList
+        = link_to "Go Back", span.billboards_path

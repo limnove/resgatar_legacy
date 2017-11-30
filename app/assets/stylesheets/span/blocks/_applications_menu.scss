@@ -1,0 +1,39 @@
+// app/assets/stylesheets/span/blocks/_applications_menu.scss
+
+.applicationsMenu {
+  width: 100%;
+  padding: 8px 0;
+  @include floatLeft;
+  .applicationsMenuBox {
+    width: 100%;
+    @include floatLeft;
+    .applicationsMenuList {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        color: $blue02;
+        width: 208px;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 32px;
+        border-radius: 2px;
+        @include floatLeft;
+        @include hoverAnimation;
+        img {
+          width: 32px;
+          height: 32px;
+          margin: 0 8px 0 0;
+          @include floatLeft;
+        }
+        &:link, &:visited {
+          background-color: $blue00;
+        }
+        &:hover, &:active {
+          background-color: $blue10;
+        }
+      }
+    }
+  }
+}

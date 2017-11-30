@@ -1,0 +1,13 @@
+-# app/views/span/timelines/_cards.html.haml
+
+.pageHeader
+  .pageHeaderBox
+    .pageHeaderItem
+      .pageHeaderTitle
+        %h1 Latest Timelines
+.card.medium
+  %ul.cardBox
+    - if @timelines.blank?
+      = render partial: "blocks/span/empty"
+    - else
+      = render partial: "timeline", collection: @timelines, as: :object

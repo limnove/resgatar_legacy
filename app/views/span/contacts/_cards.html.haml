@@ -1,0 +1,8 @@
+-# app/views/span/contacts/_cards.html.haml
+
+.card.medium
+  %ul#ajaxBox.cardBox.sortable{ "data-update-url" => sortable_contacts_path }
+    - if @contacts.blank?
+      = render partial: "blocks/span/empty"
+    - else
+      = render partial: "contact", collection: @contacts, as: :object

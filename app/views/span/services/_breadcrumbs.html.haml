@@ -1,0 +1,11 @@
+-# app/views/span/services/_breadcrumbs.html.haml
+
+.breadcrumbs
+  .breadcrumbsBox
+    .breadcrumbsList
+      - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+        = link_to "Dashboard", span.root_path
+      - elsif params[:action] == "preview" || params[:action] == "seo_settings" || params[:action] == "update_seo_settings"
+        = link_to "Go Back", span.edit_service_path(@service)
+      - else
+        = link_to "Go Back", span.services_path

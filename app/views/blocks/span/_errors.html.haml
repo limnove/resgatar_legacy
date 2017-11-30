@@ -1,0 +1,11 @@
+-# app/views/blocks/span/_errors.html.haml
+
+- if object.errors.any?
+  .errors
+    .errorsBox
+      .errorsItem
+        %h2 #{pluralize(object.errors.count, "error")} prohibited this Item from being saved:
+    %ul.errorsBox
+      - object.errors.full_messages.each do |msg|
+        %li.errorsList
+          %p= msg

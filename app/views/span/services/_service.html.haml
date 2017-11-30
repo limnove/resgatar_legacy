@@ -1,0 +1,16 @@
+-# app/views/span/services/_service.html.haml
+
+%li.cardList{ id: "service_#{ object.id }" }
+  .top
+    %nav.misc
+      %ul.miscBox
+        = object.get_destroy_btn
+        = object.get_handle_btn
+        = object.get_edit_btn
+  .middle
+    = object.get_title
+    = object.get_description
+  .bottom
+    %nav.misc
+      %ul.miscBox
+        = object.get_published_status

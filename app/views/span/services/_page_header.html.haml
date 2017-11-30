@@ -1,0 +1,22 @@
+-# app/views/span/services/_page_header.html.haml
+
+.pageHeader
+  .pageHeaderBox
+    .pageHeaderItem
+      .pageHeaderTitle
+        - if params[:action] == "index"
+          %h1#ajaxTitle Published Services
+        - elsif params[:action] == "unpublished"
+          %h1#ajaxTitle Unpublished Services
+        - elsif params[:action] == "all"
+          %h1#ajaxTitle All Services
+        - elsif params[:action] == "new" || params[:action] == "create"
+          %h1 Add New Service
+        - elsif params[:action] == "edit" || params[:action] == "update"
+          %h1 Edit Service
+        - elsif params[:action] == "seo_settings" || params[:action] == "update_seo_settings"
+          %h1= "SEO Settings for: " + @service.title
+        - elsif params[:action] == "preview"
+          %h1= "Preview for: " + @service.title
+        - else
+          %h1 Service

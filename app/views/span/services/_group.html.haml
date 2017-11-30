@@ -1,0 +1,10 @@
+-# app/views/span/services/_group.html.haml
+
+.group
+  .groupBox
+    .groupList
+      = link_to "Published", services_path, remote: true
+    .groupList
+      = link_to "Unpublished", unpublished_services_path, remote: true
+    .groupList
+      = link_to "All", all_services_path, remote: true

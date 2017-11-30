@@ -1,0 +1,10 @@
+-# app/views/span/networks/_group.html.haml
+
+.group
+  .groupBox
+    .groupList
+      = link_to "Published", networks_path, remote: true
+    .groupList
+      = link_to "Unpublished", unpublished_networks_path, remote: true
+    .groupList
+      = link_to "All", all_networks_path, remote: true

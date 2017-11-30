@@ -1,0 +1,37 @@
+// app/assets/stylesheets/span/blocks/_errors.scss
+
+.errors {
+  @include floatLeft;
+  .errorsBox {
+    @include floatLeft;
+    .errorsItem {
+      @include floatLeft;
+      width: 704px;
+      margin: 8px;
+    }
+    .errorsList {
+      background-color: $red00;
+      width: 344px;
+      margin: 8px;
+      border-radius: 2px;
+      @include floatLeft;
+    }
+    h2 {
+      color: $red00;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+      text-decoration: underline;
+      @include floatLeft;
+    }
+    p {
+      color: $red03;
+      padding: 0 16px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      @include floatLeft;
+    }
+  }
+}

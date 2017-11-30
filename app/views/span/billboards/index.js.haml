@@ -1,0 +1,15 @@
+-# app/views/span/billboards/active.js.haml
+
+-# Page Header
+- if params[:action] == "index"
+  ! $("#ajaxTitle").html("#{"Published Billboards"}");
+- if params[:action] == "unpublished"
+  ! $("#ajaxTitle").html("#{"Unpublished Billboards"}");
+- if params[:action] == "all"
+  ! $("#ajaxTitle").html("#{"All Billboards"}");
+
+-# Cards
+- if @billboards.blank?
+  ! $("#ajaxBox").html("#{j render partial: "blocks/span/empty"}");
+- else
+  ! $("#ajaxBox").html("#{ j render partial: "billboard", collection: @billboards, as: :object }");

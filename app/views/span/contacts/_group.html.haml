@@ -1,0 +1,10 @@
+-# app/views/span/contacts/_group.html.haml
+
+.group
+  .groupBox
+    .groupList
+      = link_to "Published", contacts_path, remote: true
+    .groupList
+      = link_to "Unpublished", unpublished_contacts_path, remote: true
+    .groupList
+      = link_to "All", all_contacts_path, remote: true

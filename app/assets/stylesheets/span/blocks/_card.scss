@@ -1,0 +1,68 @@
+// app/assets/stylesheets/span/blocks/_card.scss
+
+.card {
+  width: 720px;
+  @include floatLeft;
+  .cardBox {
+    @include floatLeft;
+    .cardHeader,
+    .cardItem,
+    .cardList,
+    .cardFooter {
+      background-color: $gray03;
+      margin: 8px;
+      @include floatLeft;
+    }
+    .cardItem.empty {
+      background-color: $yellow00;
+      width: 704px;
+      h3.empty {
+        color: $yellow03;
+        width: 100%;
+        padding: 24px 0;
+        font-weight: 100;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.card.tiny {
+  .cardBox {
+    .cardHeader,
+    .cardList,
+    .cardFooter {
+      width: 164px;
+    }
+  }
+}
+
+.card.small {
+  .cardBox {
+    .cardHeader,
+    .cardList,
+    .cardFooter {
+      width: 224px;
+    }
+  }
+}
+
+.card.medium {
+  .cardBox {
+    .cardHeader,
+    .cardList,
+    .cardFooter {
+      width: 344px;
+    }
+  }
+}
+
+.card.large {
+  .cardBox {
+    .cardHeader,
+    .cardList,
+    .cardFooter {
+      width: 704px;
+    }
+  }
+}

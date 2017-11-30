@@ -1,0 +1,9 @@
+-# app/views/span/contacts/_header.html.haml
+
+.wrap.atpD.abpD
+  = render partial: "breadcrumbs"
+  = render partial: "tabs"
+  = render partial: "page_header"
+  - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+    = render partial: "group"
+    = render partial: "actions"

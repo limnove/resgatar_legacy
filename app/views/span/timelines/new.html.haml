@@ -1,0 +1,5 @@
+-# app/views/span/timelines/new.html.haml
+
+= render partial: "header"
+= render partial: "blocks/span/errors", locals: { object: @timeline }
+= render partial: "form", locals: { object: @timeline }

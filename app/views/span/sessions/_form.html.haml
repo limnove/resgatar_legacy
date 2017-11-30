@@ -1,0 +1,20 @@
+-# app/views/span/session/_form.html.haml
+
+= form_tag span.session_path, autocomplete: :off, class: "formSession" do
+  %fieldset.formSessionBox
+    .formSessionItem.formWrap05
+      %legend Email
+      = text_field_tag :email, nil
+
+    .formSessionItem.formWrap05
+      %legend Password
+      = password_field_tag :password, nil
+
+    -# Closing Wrap
+    .wrap
+      .formSessionItem.formWrap05
+        = submit_tag "Login"
+
+      .formSessionItem.formWrap05
+        = link_to "Go Back", main_app.root_path
+        = link_to "Forgot your password?", span.new_reset_password_path

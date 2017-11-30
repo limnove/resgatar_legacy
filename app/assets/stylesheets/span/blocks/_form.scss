@@ -1,0 +1,240 @@
+// app/assets/stylesheets/span/blocks/_form.scss
+
+$width: 104px, 128px, 164px, 224px, 272px, 344px, 416px, 464px, 524px, 560px, 584px, 704px;
+
+$width01: nth($width, 1);
+$width02: nth($width, 2);
+$width03: nth($width, 3);
+$width04: nth($width, 4);
+$width05: nth($width, 5);
+$width06: nth($width, 6);
+$width07: nth($width, 7);
+$width08: nth($width, 8);
+$width09: nth($width, 9);
+$width10: nth($width, 10);
+$width11: nth($width, 11);
+$width12: nth($width, 12);
+
+.formWrap01 {width: $width01;}
+.formWrap02 {width: $width02;}
+.formWrap03 {width: $width03;}
+.formWrap04 {width: $width04;}
+.formWrap05 {width: $width05;}
+.formWrap06 {width: $width06;}
+.formWrap07 {width: $width07;}
+.formWrap08 {width: $width08;}
+.formWrap09 {width: $width09;}
+.formWrap10 {width: $width10;}
+.formWrap11 {width: $width11;}
+.formWrap12 {width: $width12;}
+
+legend {
+  color: $gray10;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 24px;
+  @include floatLeft;
+  i {
+    color: $yellow00;
+  }
+}
+
+input,
+textarea {
+  color: $gray00;
+  background-color: $gray03;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.4em;
+  border: none;
+  @include floatLeft;
+}
+
+input {
+  height: 40px;
+  padding: 0 16px;
+}
+
+textarea {
+  height: 240px;
+  padding: 12px 16px;
+}
+
+textarea.tiny {
+  height: 80px;
+}
+
+textarea.small {
+  height: 160px;
+}
+
+textarea.medium {
+  height: 320px;
+}
+
+textarea.large {
+  height: 640px;
+}
+
+.editable {
+  background-color: $white;
+  height: 320px;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+select {
+  width: 100%;
+  height: 32px;
+  margin: 4px 0;
+  font-size: 18px;
+  line-height: 32px;
+  border: none;
+  @include floatLeft;
+}
+
+.fileUpload {
+  background-color: $gray02;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  @include floatLeft;
+  &:hover {
+    background-color: $gray00;
+    cursor: pointer;
+  }
+}
+
+input[type="file"],
+.upload {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter:alpha(opacity=0);
+  border-radius: 4px;
+  cursor: pointer;
+  @include floatLeft;
+  &:hover {
+    background-color: $gray00;
+    cursor: pointer;
+  }
+}
+
+.filePreview {
+  background-color: $gray02;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px 0 0;
+  border-radius: 4px;
+  @include floatLeft;
+  &:hover {
+    background-color: $gray00;
+    cursor: pointer;
+  }
+}
+
+p.note {
+  color: $gray01;
+  font-size: 12px;
+  line-height: 40px;
+  @include floatLeft;
+  i {
+    color: $yellow00;
+  }
+}
+
+p.fileFormat {
+  color: $gray01;
+  margin: 0 0 0 8px;
+  font-size: 12px;
+  line-height: 40px;
+  @include floatLeft;
+}
+
+p.label {
+  color: $gray00;
+  font-size: 18px;
+  line-height: 40px;
+  @include floatLeft;
+  small {
+    color: $gray01;
+    font-size: 12px;
+    line-height: 40px;
+    @include floatLeft;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 12px 4px 10px 0;
+  padding: 0;
+  border: none;
+}
+
+input[type="submit"] {
+  color: $green20;
+  background-color: $green00;
+  height: 64px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 64px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  &:hover,
+  &:active {
+    color: $green10;
+    background-color: $green01;
+  }
+}
+
+.form {
+  width: 720px;
+  @include floatLeft;
+  .formBox {
+    @include floatLeft;
+    .formItem {
+      margin: 8px;
+      @include floatLeft;
+    }
+  }
+}
+
+.formSession {
+  width: 288px;
+  margin: 64px 216px 0 216px;
+  @include floatLeft;
+  .formSessionBox {
+    @include floatLeft;
+    .formSessionItem {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $gray02;
+        }
+        &:hover,
+        &:active {
+          color: $gray00;
+        }
+      }
+    }
+  }
+}

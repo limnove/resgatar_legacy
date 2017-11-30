@@ -1,0 +1,67 @@
+-# app/views/span/settings/_form.html.haml
+
+= form_for object, url: span.settings_path, html: {multipart: true, autocomplete: :off, class: "form"} do |f|
+  %fieldset.formBox
+    .formItem.formWrap12
+      %legend
+        Title
+        %i *
+      = f.text_field :seo_title
+
+    .formItem.formWrap12
+      %legend
+        Description
+        %i *
+      = f.text_area :seo_description, class: "small"
+
+    .formItem.formWrap12
+      %legend
+        Tags
+        %i *
+      = f.text_field :seo_tags
+
+    .formItem.formWrap12
+      %legend
+        Offline Title
+        %i *
+      = f.text_field :offline_title
+
+    .formItem.formWrap12
+      %legend
+        Offline Description
+        %i *
+      = f.text_area :offline_description, class: "small"
+
+    .formItem.formWrap05
+      %legend Document Box
+      .fileUpload
+        = f.file_field :documentbox, class: "upload"
+      %p.fileFormat Formats: pdf
+
+    -# Closing Wrap
+    .wrap
+      .formItem.formWrap02
+        = submit_tag "Save"
+
+      .formItem.formWrap02
+        %legend Status
+        = f.check_box :published
+        %p.label Online
+
+      - unless object.seo_imagebox.blank?
+        .formItem.formWrap02
+          %legend Image
+          = link_to "", object.seo_imagebox_url, "data-lightbox" => object.seo_imagebox, class: "filePreview"
+          = f.check_box :remove_seo_imagebox
+          %p.label
+            %small Delete?
+
+      .formItem.formWrap05
+        %legend Image Box
+        .fileUpload
+          = f.file_field :seo_imagebox, class: "upload"
+        %p.fileFormat Formats: jpg, jpeg, png & gif
+
+      .formItem.formWrap12
+        %p.note
+          %i * Required Fields

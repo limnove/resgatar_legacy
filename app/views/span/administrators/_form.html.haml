@@ -1,0 +1,43 @@
+-# app/views/span/biographies/_form.html.haml
+
+= form_for object, url: span.administrator_path, html: {multipart: true, autocomplete: :off, class: "form"} do |f|
+  %fieldset.formBox
+    .formItem.formWrap06
+      %legend
+        Name
+        %i *
+      = f.text_field :name
+    .formItem.formWrap06
+      %legend
+        Name
+        %i *
+      = f.text_field :surname
+
+    .formItem.formWrap03
+      %legend
+        Username
+        %i *
+      = f.text_field :username
+
+    .formItem.formWrap09
+      %legend
+        Email
+        %i *
+      = f.text_field :email
+
+    .formItem.formWrap06
+      %legend Password
+      = f.password_field :password, placeholder: "************"
+
+    .formItem.formWrap06
+      %legend Password Confirmation
+      = f.password_field :password_confirmation, placeholder: "************"
+
+    -# Closing Wrap
+    .wrap
+      .formItem.formWrap02
+        = submit_tag "Save"
+
+      .formItem.formWrap12
+        %p.note
+          %i * Required Fields

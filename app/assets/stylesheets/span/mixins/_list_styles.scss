@@ -1,0 +1,10 @@
+// app/assets/stylesheets/span/mixins/_list_styles.scss
+
+@mixin disc {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.disc {
+  @include disc;
+}

@@ -1,0 +1,8 @@
+-# app/views/span/biographies/_tabs.html.haml
+
+.tabs
+  .tabsBox
+    - unless params[:action] == "seo_settings"
+      .tabsList
+        = link_to "SEO Settings", span.seo_settings_biography_path
+    = render partial: "blocks/span/website_status"

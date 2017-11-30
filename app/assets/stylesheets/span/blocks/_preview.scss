@@ -1,0 +1,21 @@
+// app/assets/stylesheets/span/blocks/_preview.scss
+
+.preview {
+  width: 720px;
+  @include floatLeft;
+  .previewBox {
+    @include floatLeft;
+    .previewItem {
+      margin: 8px;
+      @include floatLeft;
+      p {
+        color: $gray00;
+        width: 100%;
+        margin: 8px 0;
+        font-size: 18px;
+        line-height: 1.4em;
+        @include floatLeft;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// app/assets/stylesheets/span/blocks/_actions.scss
+
+.actions {
+  @include floatRight;
+  .actionsBox {
+    @include floatLeft;
+    margin: 4px;
+    .actionsList {
+      @include floatLeft;
+      margin: 4px;
+      a {
+        @include floatLeft;
+        @include hoverAnimation;
+        padding: 0 8px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 32px;
+        border-radius: 2px;
+        &:link, &:visited {
+          color: $green20;
+          background-color: $green00;
+        }
+        &:hover, &:active {
+          color: $green00;
+          background-color: $green02;
+        }
+      }
+    }
+  }
+}

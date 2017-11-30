@@ -1,0 +1,31 @@
+// app/assets/stylesheets/span/blocks/_group.scss
+
+.group {
+  @include floatLeft;
+  .groupBox {
+    @include floatLeft;
+    margin: 4px;
+    .groupList {
+      @include floatLeft;
+      margin: 4px;
+      a {
+        @include floatLeft;
+        @include hoverAnimation;
+        padding: 0 8px;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 32px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        &:link, &:visited {
+          color: $blue20;
+          background-color: $blue00;
+        }
+        &:hover, &:active {
+          color: $blue00;
+          background-color: $blue02;
+        }
+      }
+    }
+  }
+}

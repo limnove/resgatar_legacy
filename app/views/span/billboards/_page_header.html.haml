@@ -1,0 +1,16 @@
+-# app/views/span/billboards/_page_header.html.haml
+
+.pageHeader
+  .pageHeaderBox
+    .pageHeaderItem
+      .pageHeaderTitle
+        - if params[:action] == "index"
+          %h1#ajaxTitle Published Billboards
+        - if params[:action] == "unpublished"
+          %h1#ajaxTitle Unpublished Billboards
+        - if params[:action] == "all"
+          %h1#ajaxTitle All Billboards
+        - if params[:action] == "new" || params[:action] == "create"
+          %h1 Add New Billboard
+        - if params[:action] == "edit" || params[:action] == "update"
+          %h1 Edit Billboard

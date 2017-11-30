@@ -1,0 +1,5 @@
+-# app/views/span/networks/new.html.haml
+
+= render partial: "header"
+= render partial: "blocks/span/errors", locals: { object: @network }
+= render partial: "form", locals: { object: @network }

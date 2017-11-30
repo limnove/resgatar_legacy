@@ -1,0 +1,10 @@
+-# app/views/span/billboards/_group.html.haml
+
+.group
+  .groupBox
+    .groupList
+      = link_to "Published", billboards_path, remote: true
+    .groupList
+      = link_to "Unpublished", unpublished_billboards_path, remote: true
+    .groupList
+      = link_to "All", all_billboards_path, remote: true

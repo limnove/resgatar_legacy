@@ -1,0 +1,15 @@
+-# app/views/span/services/active.js.haml
+
+-# Page Header
+- if params[:action] == "index"
+  ! $("#ajaxTitle").html("#{"Published Services"}");
+- if params[:action] == "unpublished"
+  ! $("#ajaxTitle").html("#{"Unpublished Services"}");
+- if params[:action] == "all"
+  ! $("#ajaxTitle").html("#{"All Services"}");
+
+-# Cards
+- if @services.blank?
+  ! $("#ajaxBox").html("#{j render partial: "blocks/span/empty"}");
+- else
+  ! $("#ajaxBox").html("#{ j render partial: "service", collection: @services, as: :object }");

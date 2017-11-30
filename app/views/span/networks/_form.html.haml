@@ -1,0 +1,29 @@
+-# app/views/span/networks/_form.html.haml
+
+= form_for object, html: {multipart: true, autocomplete: :off, class: "form"} do |f|
+  %fieldset.formBox
+    .formItem.formWrap04
+      %legend
+        Select Social Network
+        %i *
+      = f.select :title, %w[facebook twitter instagram linkedin snapchat whatsapp]
+
+    .formItem.formWrap08
+      %legend
+        Path
+        %i *
+      = f.text_field :path
+
+    -# Closing Wrap
+    .wrap
+      .formItem.formWrap02
+        = submit_tag "Save"
+
+      .formItem.formWrap02
+        %legend Status
+        = f.check_box :published
+        %p.label Published
+
+      .formItem.formWrap12
+        %p.note
+          %i * Required Fields

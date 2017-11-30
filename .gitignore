@@ -1,0 +1,42 @@
+# Ignore these files when committing to a git repository.
+
+# Mac finder artifacts
+.DS_Store
+
+# bundler state
+.bundle
+vendor/bundle/
+vendor/ruby/
+
+# minimal Rails specific artifacts
+db/*.sqlite3
+db/*.sqlite3-journal
+db/*.javadb/
+db/*.sqlite3
+tmp
+pkg
+log
+gems
+cache
+specifications
+
+# various artifacts
+config/config.yml
+coverage.data
+coverage/
+doc/api/
+doc/app/
+doc/features.html
+doc/specs.html
+spec/tmp/*
+cache
+capybara*
+capybara-*.html
+
+# Environment files that may contain sensitive data
+.env
+.powenv
+heroku/variables.sh
+config/figaro
+config/figaro/*
+config/application.yml

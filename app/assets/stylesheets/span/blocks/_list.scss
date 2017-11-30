@@ -1,0 +1,63 @@
+// app/assets/stylesheets/span/blocks/_list.scss
+
+.list {
+  @include floatLeft;
+  .listBox {
+    padding: 7px 0;
+    @include floatLeft;
+    .listHeader,
+    .listItem,
+    .listFooter {
+      background-color: $gray03;
+      margin: 1px 8px;
+      @include floatLeft;
+    }
+  }
+}
+
+.list.tiny {
+  margin: 0 270px;
+  .listBox {
+    width: 180px;
+    .listHeader,
+    .listItem,
+    .listFooter {
+      width: 164px;
+    }
+  }
+}
+
+.list.small {
+  margin: 0 240px;
+  .listBox {
+    width: 240px;
+    .listHeader,
+    .listItem,
+    .listFooter {
+      width: 224px;
+    }
+  }
+}
+
+.list.medium {
+  margin: 0 180px;
+  .listBox {
+    width: 360px;
+    .listHeader,
+    .listItem,
+    .listFooter {
+      width: 344px;
+    }
+  }
+}
+
+.list.large {
+  .listBox {
+    width: 720px;
+    .listHeader,
+    .listItem,
+    .listFooter {
+      width: 704px;
+    }
+  }
+}

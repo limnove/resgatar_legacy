@@ -1,0 +1,48 @@
+-# app/views/span/design/form.html.haml
+
+%h1 The Form
+
+.form
+  .formBox
+    .formItem.formWrap06
+      %legend Text
+      = text_field_tag "dummy"
+    .formItem.formWrap06
+      %legend Email
+      = email_field_tag "dummy"
+    .formItem.formWrap06
+      %legend Checkbox
+      = check_box_tag "dummy"
+    .formItem.formWrap06
+      %legend Password
+      = password_field_tag "dummy"
+    .formItem.formWrap06
+      %legend Phone
+      = phone_field_tag "dummy"
+    .formItem.formWrap06
+      %legend Radio
+      = radio_button_tag "dummy", "dummy"
+      %p.label Dummy
+    .formItem.formWrap06
+      %legend Telephone
+      = telephone_field_tag "dummy"
+    .formItem.formWrap06
+      %legend URL
+      = url_field_tag "dummy"
+    .formItem.formWrap06
+      %legend File
+      .fileUpload
+        = file_field_tag "file", class: "upload"
+      %p.fileFormat Formats: jpg, jpeg, png & gif
+    .formItem.formWrap06
+      %legend Select
+      = select_tag "locations", "<option>In</option><option>Out</option>".html_safe
+    .formItem.formWrap12
+      %legend Textarea
+      = text_area_tag "dummy"
+    .formItem.formWrap06
+      = submit_tag "Edit this article"
+    .formItem.formWrap06
+      %legend Checkbox
+      = check_box_tag "dummy"
+      %p.label Dummy

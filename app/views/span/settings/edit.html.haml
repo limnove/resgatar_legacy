@@ -1,0 +1,5 @@
+-# app/views/span/settings/edit.html.haml
+
+= render partial: "header"
+= render partial: "blocks/span/errors", locals: { object: @setting }
+= render partial: "form", locals: { object: @setting }

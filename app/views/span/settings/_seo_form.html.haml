@@ -1,0 +1,30 @@
+-# app/views/span/biographies/_seo_form.html.haml
+
+= form_for object, url: span.biography_path, html: {multipart: true, autocomplete: :off, class: "form"} do |f|
+  %fieldset.formBox
+    .formItem.formWrap12
+      %legend Title
+      = f.text_field :seo_title
+
+    .formItem.formWrap12
+      %legend Description
+      = f.text_area :seo_description, class: "small"
+
+    .formItem.formWrap12
+      %legend Tags
+      = f.text_field :seo_tags
+
+    -# Closing Wrap
+    .wrap
+      .formItem.formWrap02
+        = submit_tag "Save"
+
+      .formItem.formWrap06
+        %legend Imagebox
+        .fileUpload
+          = f.file_field :imagebox, class: "upload"
+        %p.fileFormat Formats: jpg, jpeg, png & gif
+
+      .formItem.formWrap12
+        %p.note
+          %i * Required Fields

@@ -1,0 +1,18 @@
+-# app/views/span/contacts/_page_header.html.haml
+
+.pageHeader
+  .pageHeaderBox
+    .pageHeaderItem
+      .pageHeaderTitle
+        - if params[:action] == "index"
+          %h1#ajaxTitle Published Contacts
+        - if params[:action] == "unpublished"
+          %h1#ajaxTitle Unpublished Contacts
+        - if params[:action] == "all"
+          %h1#ajaxTitle All Contacts
+        - if params[:action] == "new" || params[:action] == "create"
+          %h1 Add New Contact
+        - if params[:action] == "edit" || params[:action] == "update"
+          %h1 Edit Contact
+        - if params[:action] == "seo_settings" || params[:action] == "update_seo_settings"
+          %h1= "SEO Settings for: " + @contact.title

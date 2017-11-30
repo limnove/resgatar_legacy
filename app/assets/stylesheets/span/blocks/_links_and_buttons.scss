@@ -1,0 +1,132 @@
+// app/assets/stylesheets/span/blocks/_links_and_buttons.scss
+
+a.default {
+  &:link,
+  &:visited {
+    color: $green01;
+  }
+  &:hover,
+  &:active {
+    color: $green10;
+  }
+}
+
+a.defaultBtn {
+  padding: 0 8px;
+  &:link,
+  &:visited {
+    color: $green02;
+    background-color: $green00;
+  }
+  &:hover,
+  &:active {
+    color: $green03;
+    background-color: $green01;
+  }
+}
+
+a.handle {
+  cursor: move;
+  &:link,
+  &:visited {
+    color: $yellow00;
+  }
+  &:hover,
+  &:active {
+    color: $yellow01;
+  }
+}
+
+a.handleBtn {
+  margin: 0 0 0 4px;
+  padding: 0 8px;
+  cursor: move;
+  &:link,
+  &:visited {
+    color: $gray02;
+    background-color: $gray00;
+  }
+  &:hover,
+  &:active {
+    color: $gray03;
+    background-color: $gray01;
+  }
+}
+
+a.new {
+  &:link,
+  &:visited {
+    color: $green00;
+  }
+  &:hover,
+  &:active {
+    color: $green01;
+  }
+}
+
+a.newBtn {
+  padding: 0 8px;
+  &:link,
+  &:visited {
+    color: $green02;
+    background-color: $green00;
+  }
+  &:hover,
+  &:active {
+    color: $green03;
+    background-color: $green01;
+  }
+}
+
+a.edit {
+  &:link,
+  &:visited {
+    color: $yellow00;
+  }
+  &:hover,
+  &:active {
+    color: $yellow01;
+  }
+}
+
+a.editBtn {
+  padding: 0 8px;
+  &:link,
+  &:visited {
+    color: $yellow02;
+    background-color: $yellow00;
+  }
+  &:hover,
+  &:active {
+    color: $yellow03;
+    background-color: $yellow01;
+  }
+}
+
+a.destroy {
+  padding: 0 8px;
+  @include floatLeft;
+  &:link,
+  &:visited {
+    color: $red00;
+  }
+  &:hover,
+  &:active {
+    color: $red01;
+  }
+}
+
+a.destroyBtn {
+  padding: 0 8px;
+  @include floatLeft;
+  &:link,
+  &:visited {
+    color: $red02;
+    background-color: $red00;
+  }
+  &:hover,
+  &:active {
+    color: $red03;
+    background-color: $red01;
+  }
+}

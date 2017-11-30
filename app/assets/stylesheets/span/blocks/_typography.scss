@@ -1,0 +1,91 @@
+// app/assets/stylesheets/span/blocks/_typography.scss
+
+.top,
+.bottom {
+  p {
+    color: $gray01;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    @include floatLeft;
+    strong {
+      color: $gray10;
+      font-weight: 900;
+    }
+  }
+  h3 {
+    color: $gray20;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    @include floatLeft;
+    strong {
+      font-weight: 900;
+    }
+  }
+  h6 {
+    color: $gray01;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 24px;
+    @include floatLeft;
+    strong {
+      color: $gray10;
+      font-weight: 900;
+    }
+  }
+  .published {
+    color: $green00;
+    font-weight: 900;
+  }
+  .unpublished {
+    color: $red00;
+    font-weight: 900;
+  }
+  a {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 24px;
+    border-radius: 2px;
+    @include floatRight;
+  }
+}
+
+.middle {
+  p {
+    color: $gray01;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    @include floatLeft;
+  }
+  h3 {
+    color: $blue01;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    @include floatLeft;
+    strong {
+      color: $gray10;
+      font-weight: 900;
+    }
+  }
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 24px;
+    @include floatLeft;
+    @include hoverAnimation;
+    &:link,
+    &:visited {
+      color: $blue01;
+    }
+    &:hover,
+    &:active {
+      color: $blue10;
+    }
+  }
+}

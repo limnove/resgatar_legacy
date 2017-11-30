@@ -1,0 +1,15 @@
+-# app/views/span/networks/active.js.haml
+
+-# Page Header
+- if params[:action] == "index"
+  ! $("#ajaxTitle").html("#{"Published Networks"}");
+- if params[:action] == "unpublished"
+  ! $("#ajaxTitle").html("#{"Unpublished Networks"}");
+- if params[:action] == "all"
+  ! $("#ajaxTitle").html("#{"All Networks"}");
+
+-# Cards
+- if @networks.blank?
+  ! $("#ajaxBox").html("#{j render partial: "blocks/span/empty"}");
+- else
+  ! $("#ajaxBox").html("#{ j render partial: "network", collection: @networks, as: :object }");

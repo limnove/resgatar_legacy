@@ -1,0 +1,46 @@
+// app/assets/stylesheets/span/blocks/_markdown_actions.scss
+
+.markdownActions {
+  @include floatRight;
+  .markdownActionsBox {
+    @include floatLeft;
+    .markdownActionsList {
+      margin: 0 0 0 8px;
+      @include floatLeft;
+      a.markdownPreview {
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $green00;
+        }
+        &:hover,
+        &:active {
+          color: $green02;
+        }
+      }
+      a.help {
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $gray00;
+        }
+        &:hover,
+        &:active {
+          color: $gray02;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+-# app/views/span/timelines/active.js.haml
+
+-# Page Header
+- if params[:action] == "index"
+  ! $("#ajaxTitle").html("#{"Published Timelines"}");
+- if params[:action] == "unpublished"
+  ! $("#ajaxTitle").html("#{"Unpublished Timelines"}");
+- if params[:action] == "all"
+  ! $("#ajaxTitle").html("#{"All Timelines"}");
+
+-# Cards
+- if @timelines.blank?
+  ! $("#ajaxBox").html("#{j render partial: "blocks/span/empty"}");
+- else
+  ! $("#ajaxBox").html("#{ j render partial: "timeline", collection: @timelines, as: :object }");

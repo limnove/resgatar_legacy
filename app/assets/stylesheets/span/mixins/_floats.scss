@@ -1,0 +1,17 @@
+// app/assets/stylesheets/span/mixins/_floats.scss
+
+@mixin floatLeft {
+  float: left;
+}
+
+@mixin floatRight {
+  float: right;
+}
+
+.floatLeft {
+  @include floatLeft;
+}
+
+.floatRight {
+  @include floatRight;
+}

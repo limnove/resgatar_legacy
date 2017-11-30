@@ -1,0 +1,61 @@
+// app/assets/stylesheets/span/blocks/_grid.scss
+
+.grid {
+  width: 720px;
+  @include floatLeft;
+  .gridBox {
+    width: inherit;
+    @include floatLeft;
+    .gridHeader,
+    .gridItem,
+    .gridFooter {
+      background-color: $gray03;
+      margin: 8px;
+      @include floatLeft;
+      img {
+        width: 100%;
+        @include floatLeft;
+      }
+    }
+  }
+}
+
+.grid.tiny {
+  .gridBox {
+    .gridHeader,
+    .gridItem,
+    .gridFooter {
+      width: 164px;
+    }
+  }
+}
+
+.grid.small {
+  .gridBox {
+    .gridHeader,
+    .gridItem,
+    .gridFooter {
+      width: 224px;
+    }
+  }
+}
+
+.grid.medium {
+  .gridBox {
+    .gridHeader,
+    .gridItem,
+    .gridFooter {
+      width: 344px;
+    }
+  }
+}
+
+.grid.large {
+  .gridBox {
+    .gridHeader,
+    .gridItem,
+    .gridFooter {
+      width: 704px;
+    }
+  }
+}

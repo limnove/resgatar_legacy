@@ -1,0 +1,81 @@
+-# app/views/span/contacts/_form.html.haml
+
+= form_for object, html: {multipart: true, autocomplete: :off, class: "form"} do |f|
+  %fieldset.formBox
+    .formItem.formWrap12
+      %legend
+        Title
+        %i *
+      = f.text_field :title
+
+    .formItem.formWrap06
+      %legend Name
+      = f.text_field :name
+
+    .formItem.formWrap06
+      %legend Surname
+      = f.text_field :surname
+
+    .formItem.formWrap12
+      %legend Address
+      = f.text_field :address
+
+    .formItem.formWrap04
+      %legend Country
+      = f.text_field :country
+
+    .formItem.formWrap04
+      %legend City
+      = f.text_field :city
+
+    .formItem.formWrap04
+      %legend Postcode
+      = f.text_field :postcode
+
+    .formItem.formWrap04
+      %legend Fax
+      = f.text_field :fax
+
+    .formItem.formWrap04
+      %legend Phone
+      = f.text_field :phone
+
+    .formItem.formWrap04
+      %legend Mobile
+      = f.text_field :mobile
+
+    .formItem.formWrap06
+      %legend Email
+      = f.text_field :email
+
+    .formItem.formWrap06
+      %legend Path
+      = f.text_field :path
+
+    -# Closing Wrap
+    .wrap
+      .formItem.formWrap02
+        = submit_tag "Save"
+
+      .formItem.formWrap02
+        %legend Status
+        = f.check_box :published
+        %p.label Published
+
+      - unless object.imagebox.blank?
+        .formItem.formWrap02
+          %legend Image
+          = link_to "", object.imagebox_url, "data-lightbox" => object.imagebox, class: "filePreview"
+          = f.check_box :remove_imagebox
+          %p.label
+            %small Delete?
+
+      .formItem.formWrap05
+        %legend Imagebox
+        .fileUpload
+          = f.file_field :imagebox, class: "upload"
+        %p.fileFormat Formats: jpg, jpeg, png & gif
+
+      .formItem.formWrap12
+        %p.note
+          %i * Required Fields

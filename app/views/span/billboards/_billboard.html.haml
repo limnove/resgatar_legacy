@@ -1,0 +1,19 @@
+-# app/views/span/billboards/_billboard.html.haml
+
+%li.cardList{ id: "billboard_#{ object.id }" }
+  .top
+    %nav.misc
+      %ul.miscBox
+        = object.get_destroy_btn
+        = object.get_handle_btn
+        = object.get_edit_btn
+  .middle
+    = object.get_medium_card_imagebox
+  .middle
+    = object.get_title
+    = object.get_description
+  .bottom
+    %nav.misc
+      %ul.miscBox
+        = object.get_published_status
+        = object.get_path

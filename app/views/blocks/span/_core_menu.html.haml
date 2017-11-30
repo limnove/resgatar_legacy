@@ -1,0 +1,10 @@
+-# app/views/blocks/span/_core_menu.html.haml
+
+.coreMenu
+  .coreMenuBox
+    .coreMenuList
+      = link_to raw("&#9776;"), "#", class: "off menu hamburgerBtn"
+    .coreMenuList
+      = link_to "Dashboard", span.root_path
+    .coreMenuList
+      = link_to "Settings", span.settings_path

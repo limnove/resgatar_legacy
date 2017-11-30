@@ -1,0 +1,8 @@
+-# app/views/span/services/_cards.html.haml
+
+.card.large
+  %ul#ajaxBox.cardBox.sortable{ "data-update-url" => sortable_services_path }
+    - if @services.blank?
+      = render partial: "blocks/span/empty"
+    - else
+      = render partial: "service", collection: @services, as: :object

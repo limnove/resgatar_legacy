@@ -1,0 +1,7 @@
+-# app/views/span/settings/_tabs.html.haml
+
+.tabs
+  .tabsBox
+    = render partial: "blocks/span/website_status"
+    .tabsList
+      = link_to "Download Subscribers", subscribers_path(format: "csv")

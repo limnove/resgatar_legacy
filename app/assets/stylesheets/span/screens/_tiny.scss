@@ -1,0 +1,29 @@
+// app/assets/stylesheets/span/screens/_tiny.scss
+
+$width: 50px, 60px, 75px, 100px, 120px, 150px, 180px, 200px, 225px, 240px, 250px, 300px;
+
+$width01: nth($width, 1);
+$width02: nth($width, 2);
+$width03: nth($width, 3);
+$width04: nth($width, 4);
+$width05: nth($width, 5);
+$width06: nth($width, 6);
+$width07: nth($width, 7);
+$width08: nth($width, 8);
+$width09: nth($width, 9);
+$width10: nth($width, 10);
+$width11: nth($width, 11);
+$width12: nth($width, 12);
+
+.column01 {width: $width01;}
+.column02 {width: $width02;}
+.column03 {width: $width03;}
+.column04 {width: $width04;}
+.column05 {width: $width05;}
+.column06 {width: $width06;}
+.column07 {width: $width07;}
+.column08 {width: $width08;}
+.column09 {width: $width09;}
+.column10 {width: $width10;}
+.column11 {width: $width11;}
+.column12 {width: $width12;}

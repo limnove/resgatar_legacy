@@ -1,0 +1,7 @@
+-# app/views/span/services/_actions.html.haml
+
+.actions
+  .actionsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .actionsList
+        = link_to "New Service", new_service_path

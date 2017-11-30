@@ -1,0 +1,63 @@
+// app/assets/stylesheets/span/blocks/_bottom.scss
+
+.bottom {
+  width: inherit;
+  padding: 16px 32px;
+  @include floatLeft;
+  h6 {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 24px;
+    @include floatLeft;
+  }
+  h6.published {
+    color: $green00;
+  }
+  h6.unpublished {
+    color: $red00;
+  }
+  a {
+    background: $gray02;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 24px;
+    border-radius: 2px;
+    @include floatRight;
+  }
+  a.defaultBtn {
+    &:link,
+    &:visited {
+      color: $blue02;
+      background-color: $blue00;
+    }
+    &:hover,
+    &:active {
+      color: $blue03;
+      background-color: $blue01;
+    }
+  }
+  a.editBtn {
+    &:link,
+    &:visited {
+      color: $yellow02;
+      background-color: $yellow00;
+    }
+    &:hover,
+    &:active {
+      color: $yellow03;
+      background-color: $yellow01;
+    }
+  }
+  h6.empty {
+    color: $gray02;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 24px;
+    @include floatRight;
+  }
+}

@@ -1,0 +1,7 @@
+-# app/views/span/biographies/_header.html.haml
+
+.wrap.atpD.abpD
+  = render partial: "breadcrumbs"
+  - unless params[:action] == "preview"
+    = render partial: "tabs"
+  = render partial: "page_header"

@@ -1,0 +1,46 @@
+// app/assets/stylesheets/span/blocks/_tabs.scss
+
+.tabs {
+  @include floatRight;
+  .tabsBox {
+    @include floatLeft;
+    .tabsList {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $green00;
+        }
+        &:hover,
+        &:active {
+          color: $green02;
+        }
+      }
+      p {
+        color: $gray02;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 16px;
+        text-transform: uppercase;
+        @include floatLeft;
+        span {
+          display: inline-block;
+        }
+      }
+      .online {
+        color: $green00;
+      }
+      .offline {
+        color: $red00;
+      }
+    }
+  }
+}

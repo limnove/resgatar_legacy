@@ -1,0 +1,22 @@
+// app/assets/stylesheets/span/blocks/_notifications.scss
+
+.notifications {
+  @include floatLeft;
+  .notificationsBox {
+    position: relative;
+    @include floatLeft;
+    .notificationsItem {
+      @include floatLeft;
+      width: 944px;
+      margin: 8px;
+      p {
+        @include floatLeft;
+        width: 100%;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+  }
+}

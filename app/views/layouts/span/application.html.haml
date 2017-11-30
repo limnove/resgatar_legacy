@@ -1,0 +1,35 @@
+-# app/views/layouts/span/application.html.haml
+
+!!!
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
+    %meta{ content: "initial-scale=1.0, width=device-width", name: "viewport" }
+    %title= "LIMBO :: " + "#{app_title}"
+    %meta{ content: "Lim9 (talktous[@]lim9.com)", name: "author" }
+    = favicon_link_tag "span/favicon.png", rel: "icon", type: "image/png"
+    = favicon_link_tag "span/favicon.ico", type: "image/vnd.microsoft.icon"
+    = stylesheet_link_tag "span/application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "span/application", "data-turbolinks-track" => true, async: true
+    = csrf_meta_tags
+  %body
+    - if current_administrator
+      = render partial: "blocks/span/notifications"
+      %header.universal.purple20Bg
+        .placeholder
+          .wrap
+            = render partial: "blocks/span/core_menu"
+            = render partial: "blocks/span/session_menu"
+      .universal.blue20Bg
+        .placeholder
+          .wrap
+            = render partial: "blocks/span/applications_menu"
+    %main.universal
+      .placeholder
+        .wrap
+          .column09.floatLeft.center09
+            = yield
+    %footer.universal.purple20Bg.footer
+      .placeholder
+        .wrap

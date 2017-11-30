@@ -1,0 +1,9 @@
+// app/assets/stylesheets/span/mixins/_hover_effects.scss
+
+@mixin hoverAnimation {
+  @include prefix(transition, (color 0.2s ease-out, background 0.2s ease-in));
+}
+
+.hoverAnimation {
+  @include hoverAnimation;
+}

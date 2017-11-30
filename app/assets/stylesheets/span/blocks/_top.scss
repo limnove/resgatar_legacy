@@ -1,0 +1,66 @@
+// app/assets/stylesheets/span/blocks/_top.scss
+
+.top {
+  width: inherit;
+  padding: 12px 28px;
+  @include floatLeft;
+  .misc {
+    width: 100%;
+    @include floatLeft;
+    .miscBox {
+      width: 100%;
+      @include floatLeft;
+      .miscList {
+        margin: 4px;
+        a {
+          background: $gray02;
+          padding: 0 4px;
+          font-size: 12px;
+          font-weight: 900;
+          text-transform: uppercase;
+          text-decoration: underline;
+          line-height: 24px;
+          border-radius: 2px;
+          @include floatLeft;
+        }
+        a.editBtn {
+          &:link,
+          &:visited {
+            color: $yellow02;
+            background-color: $yellow00;
+          }
+          &:hover,
+          &:active {
+            color: $yellow03;
+            background-color: $yellow01;
+          }
+        }
+        a.handleBtn {
+          cursor: move;
+          &:link,
+          &:visited {
+            color: $gray02;
+            background-color: $gray00;
+          }
+          &:hover,
+          &:active {
+            color: $gray03;
+            background-color: $gray01;
+          }
+        }
+        a.destroyBtn {
+          &:link,
+          &:visited {
+            color: $red02;
+            background-color: $red00;
+          }
+          &:hover,
+          &:active {
+            color: $red03;
+            background-color: $red01;
+          }
+        }
+      }
+    }
+  }
+}

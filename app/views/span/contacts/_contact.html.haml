@@ -1,0 +1,16 @@
+-# app/views/span/contacts/_contact.html.haml
+
+%li.cardList{ id: "contact_#{ object.id }" }
+  .top
+    %nav.misc
+      %ul.miscBox
+        = object.get_destroy_btn
+        = object.get_handle_btn
+        = object.get_edit_btn
+  .middle
+    = object.get_title
+  .bottom
+    %nav.misc
+      %ul.miscBox
+        = object.get_published_status
+        = object.get_path

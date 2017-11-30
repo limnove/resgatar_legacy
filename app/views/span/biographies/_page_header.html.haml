@@ -1,0 +1,12 @@
+-# app/views/span/biographies/_page_header.html.haml
+
+.pageHeader
+  .pageHeaderBox
+    .pageHeaderItem
+      .pageHeaderTitle
+        - if params[:action] == "preview"
+          %h1= "Preview for: " + @biography.title
+        - elsif params[:action] == "seo_settings"
+          %h1= "SEO Settings for: " + @biography.title
+        - else
+          %h1 Biography

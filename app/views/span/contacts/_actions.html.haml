@@ -1,0 +1,7 @@
+-# app/views/span/billboards/_actions.html.haml
+
+.actions
+  .actionsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .actionsList
+        = link_to "New Contact", new_contact_path

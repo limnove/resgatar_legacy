@@ -1,0 +1,10 @@
+-# app/views/span/networks/_breadcrumbs.html.haml
+
+.breadcrumbs
+  .breadcrumbsBox
+    - if params[:action] == "index" || params[:action] == "unpublished" || params[:action] == "all"
+      .breadcrumbsList
+        = link_to "Dashboard", span.root_path
+    - else
+      .breadcrumbsList
+        = link_to "Cancel", span.networks_path, class: "cancel"

@@ -1,0 +1,58 @@
+// app/assets/stylesheets/span/setup.scss
+
+//////////////////////////////////////////////////////
+// Mixins
+//////////////////////////////////////////////////////
+
+@import "span/mixins/prefixes";
+@import "span/mixins/clearfix";
+@import "span/mixins/floats";
+@import "span/mixins/hidden";
+@import "span/mixins/list_styles";
+@import "span/mixins/hover_effects";
+
+//////////////////////////////////////////////////////
+// Screens
+//////////////////////////////////////////////////////
+
+@import "span/screens/large";
+
+//////////////////////////////////////////////////////
+// Base
+//////////////////////////////////////////////////////
+
+@import "span/core/normalize";
+@import "span/core/colors";
+@import "span/core/base";
+
+//////////////////////////////////////////////////////
+// Blocks
+//////////////////////////////////////////////////////
+
+@import "span/blocks/notifications";
+@import "span/blocks/core_menu";
+@import "span/blocks/session_menu";
+@import "span/blocks/applications_menu";
+@import "span/blocks/card";
+@import "span/blocks/list";
+@import "span/blocks/grid";
+@import "span/blocks/errors";
+@import "span/blocks/form";
+@import "span/blocks/markdown_actions";
+
+@import "span/blocks/top";
+@import "span/blocks/middle";
+@import "span/blocks/bottom";
+
+@import "span/blocks/actions";
+@import "span/blocks/group";
+@import "span/blocks/tabs";
+@import "span/blocks/breadcrumbs";
+@import "span/blocks/page_header";
+
+@import "span/blocks/preview";
+
+@import "span/blocks/add_paddings";
+@import "span/blocks/clear_paddings";
+
+@import "span/vendor/lightbox";

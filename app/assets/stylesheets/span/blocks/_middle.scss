@@ -1,0 +1,27 @@
+// app/assets/stylesheets/span/blocks/_middle.scss
+
+.middle {
+  width: inherit;
+  padding: 16px 32px;
+  @include floatLeft;
+  h3 {
+    color: $blue00;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    @include floatLeft;
+  }
+  p {
+    color: $gray00;
+    width: 100%;
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4em;
+    @include floatLeft;
+  }
+  img {
+    @include floatLeft;
+  }
+}

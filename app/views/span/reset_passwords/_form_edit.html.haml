@@ -1,0 +1,19 @@
+-# app/views/span/reset_passwords/_form.html.haml
+
+= form_for object, url: span.reset_password_path(params[:id]), html: { autocomplete: :off, class: "formSession" } do |f|
+  %fieldset.formSessionBox
+    .formSessionItem.formWrap05
+      %legend Password
+      = f.password_field :password
+
+    .formSessionItem.formWrap05
+      %legend Password Confirmation
+      = f.password_field :password_confirmation
+
+    -# Closing Wrap
+    .wrap
+      .formSessionItem.formWrap05
+        = submit_tag "Save"
+
+      .formSessionItem.formWrap05
+        = link_to "Go Back", span.login_path

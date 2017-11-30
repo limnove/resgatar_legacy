@@ -1,0 +1,47 @@
+// app/assets/stylesheets/span/blocks/_breadcrumbs.scss
+
+.breadcrumbs {
+  @include floatLeft;
+  .breadcrumbsBox {
+    @include floatLeft;
+    .breadcrumbsList {
+      margin: 8px;
+      @include floatLeft;
+      a {
+        background-image: image-url("span/blocks/breadcrumbsLinkHover.png");
+        background-repeat: no-repeat;
+        padding: 0 0 0 12px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 16px;
+        @include floatLeft;
+        @include hoverAnimation;
+        &:link,
+        &:visited {
+          color: $gray02;
+          background-image: image-url("span/blocks/breadcrumbsLink.png");
+        }
+        &:hover,
+        &:active {
+          color: $gray00;
+          background-image: image-url("span/blocks/breadcrumbsLinkHover.png");
+        }
+      }
+      a.cancel {
+        background-image: image-url("span/blocks/breadcrumbsLinkHover_cancel.png");
+        background-repeat: no-repeat;
+        &:link,
+        &:visited {
+          color: $red02;
+          background-image: image-url("span/blocks/breadcrumbsLink_cancel.png");
+        }
+        &:hover,
+        &:active {
+          color: $red00;
+          background-image: image-url("span/blocks/breadcrumbsLinkHover_cancel.png");
+        }
+      }
+    }
+  }
+}

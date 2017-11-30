@@ -1,0 +1,15 @@
+-# app/views/span/contacts/active.js.haml
+
+-# Page Header
+- if params[:action] == "index"
+  ! $("#ajaxTitle").html("#{"Published Contacts"}");
+- if params[:action] == "unpublished"
+  ! $("#ajaxTitle").html("#{"Unpublished Contacts"}");
+- if params[:action] == "all"
+  ! $("#ajaxTitle").html("#{"All Contacts"}");
+
+-# Cards
+- if @contacts.blank?
+  ! $("#ajaxBox").html("#{j render partial: "blocks/span/empty"}");
+- else
+  ! $("#ajaxBox").html("#{ j render partial: "contact", collection: @contacts, as: :object }");

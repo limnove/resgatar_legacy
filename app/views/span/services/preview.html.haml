@@ -1,0 +1,7 @@
+-# app/views/span/services/preview.html.haml
+
+= render partial: "header"
+.preview
+  .previewBox
+    .previewItem
+      #{ markdown(@service.body) }
